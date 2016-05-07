@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/js/routers/mainRouter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/models/LoginModel.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/routers/LoginController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/routers/MainRouter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/views/LoginView.js" charset="UTF-8" />
   </component>
 </project>
