@@ -61,4 +61,4 @@
 
 ## 授权
 
-工业和信息化部电子第五研究所数据中心 [License](LICENSE.txt).
+[License](LICENSE.txt).
