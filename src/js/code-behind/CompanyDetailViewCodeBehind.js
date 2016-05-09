@@ -1,19 +1,14 @@
 /**
- * Created by Qiyue-Lin on 2016/5/9.
+ * Created by ceprei2598 on 2016/5/9.
  */
 
-define(['text!html/CompanyDetailView.html', 'jquery', "../code-behind/config"], function (companyDetailView, $, config) {
-    var CompanyDetaiView = Backbone.View.extend({
-        initialize: function () {
-
-        },
-        events: {
-            
-        },
-        render: function (code) {
-            this.$el.html(companyDetailView);
+define(['text!../html/CompanyDetailView.html', 'config', 'jquery', 'jquerymobile'], function (CompanyDetailView, config, $) {
+    var CompanyDetailViewCodeBehind = function (code) {
+        var self = this;
+        $(function () {
+            $("#page-companydetail").html(CompanyDetailView);
             $.post(config.baseUrl + config.codeCompanyAppFind, {companyCode: code})
-            .done(function (json, textStatus, jqXHR) {
+                .done(function (json, textStatus, jqXHR) {
                     var baseId = 'table-company-detail-';
                     $('#' + baseId + "item").html(json.obj.item);
                     $('#' + baseId + "itemEasy").html(json.obj.itemEasy);
@@ -29,8 +24,9 @@ define(['text!html/CompanyDetailView.html', 'jquery', "../code-behind/config"], 
                     if(typeof json.obj.pathCompanyphotos !== "undefined"){
                         $('#' + baseId + "pathCompanyphotos").attr('src', encodeURI(config.baseGetFileUrl + json.obj.pathCompanyphotos));
                     }
-            });
-        }
-    });
-    return CompanyDetaiView;
+                });
+            $.mobile.changePage("#page-companydetail");
+        });
+    };
+    return CompanyDetailViewCodeBehind;
 });

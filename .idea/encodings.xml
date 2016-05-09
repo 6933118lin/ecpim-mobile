@@ -3,15 +3,17 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/css/jquerySliderWrapper.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/js/collections/CompaniesCollection.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/js/config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/code-behind/CompanyDetailViewCodeBehind.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/code-behind/LoginViewCodeBehind.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/code-behind/MainViewCodeBehind.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/code-behind/PrdOrCoSearchCodeBehind.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/code-behind/config.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/html/CompanyDetailView.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/html/MainView.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/html/PrdOrCoSearchView.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/libs/jquery.slide.wrapper.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/js/models/CompanyModel.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/routers/LoginController.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/js/routers/MainRouter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/routers/mainRouter.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/views/CompanyDetailView.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/views/LoginView.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/js/views/MainView.js" charset="UTF-8" />

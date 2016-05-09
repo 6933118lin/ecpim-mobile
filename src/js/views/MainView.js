@@ -5,7 +5,7 @@
 define(['text!html/MainView.html', 'jquery', 'jqueryslider'], function (mainHTML, $, slider) {
     var LoginView = Backbone.View.extend({
         initialize: function () {
-
+            
         },
         events: {
             "focus #input-search": "inputSearchFocusHandler"
