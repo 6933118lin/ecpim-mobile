@@ -82,8 +82,8 @@ gulp.task('copy:.htaccess', function () {
                .pipe(gulp.dest(dirs.dist));
 });
 
-gulp.task('copy:loginView.html', function () {
-    return gulp.src(dirs.src + '/loginView.html')
+gulp.task('copy:LoginView.html', function () {
+    return gulp.src(dirs.src + '/LoginView.html')
                .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
                .pipe(gulp.dest(dirs.dist));
 });
@@ -123,7 +123,7 @@ gulp.task('copy:misc', function () {
         // Exclude the following files
         // (other tasks will handle the copying of these files)
         '!' + dirs.src + '/css/main.css',
-        '!' + dirs.src + '/loginView.html'
+        '!' + dirs.src + '/LoginView.html'
 
     ], {
 

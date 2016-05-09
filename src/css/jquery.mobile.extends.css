@@ -4,6 +4,28 @@ body{
 
 .ui-btn{
     font-family: 微软雅黑;
+    font-size: 12px;
+}
+
+.ui-icon-shopping-cart :after{
+    background-image: url('images/icons-png/shopping-cart-white.png');
+}
+
+.ui-icon-shopping-cart :after{
+    background-image: url('images/icons-png/shopping-cart-black.png');
+}
+
+/* Bar: Toolbars, dividers, slider track */
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: 			#DE1212 /*{a-bar-background-color}*/;
+    border-color:	 		#ddd /*{a-bar-border}*/;
+    color: 					#F1E9E9 /*{a-bar-color}*/;
+    text-shadow: 0 /*{a-bar-shadow-x}*/ 0px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ 	#eee /*{a-bar-shadow-color}*/;
+    font-weight: bold;
 }
 
 .ui-bar-extends{

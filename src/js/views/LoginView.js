@@ -2,7 +2,7 @@
  * Created by Qiyue-Lin on 2016/5/7.
  */
 
-define(['text!html/loginView.html', 'jquery', 'jquerymobile'], function (loginHTML, $) {
+define(['text!html/LoginView.html', 'jquery', 'jquerymobile'], function (loginHTML, $) {
    var LoginView = Backbone.View.extend({
         initialize: function () {
 
@@ -17,7 +17,7 @@ define(['text!html/loginView.html', 'jquery', 'jquerymobile'], function (loginHT
        },
 
        doLoginHandler: function () {
-            alert('click login');
+            alert('存在多次绑定事件bug');
        },
 
        doBackHandler: function () {

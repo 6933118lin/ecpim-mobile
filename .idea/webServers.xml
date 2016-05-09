@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8324c7fc-5a76-4b43-a7e1-269a18bc6270" name="Tomcat" url="http://localhost:8080/ecpim-mobile">
+        <fileTransfer port="0" mountedRoot="D:\Tomcat7.0.69\webapps\ecpim-mobile" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

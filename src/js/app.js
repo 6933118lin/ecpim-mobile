@@ -4,7 +4,8 @@ require.config( {
   paths: {
         // Core Libraries
         "jquery": "libs/jquery",
-        "jquerymobile": "libs/jquerymobile",
+        "jquerymobile": "libs/jquery.mobile",
+        "jqueryslider": "libs/jquery.slide.wrapper",
         "underscore": "libs/lodash",
         "backbone": "libs/backbone",
         "text": "libs/text"
@@ -28,4 +29,10 @@ require([ "jquery", "backbone", "routers/MainRouter", "jquerymobile"], function(
     $.mobile.hashListeningEnabled = false;
     // Instantiates a new Backbone.js Mobile Router
     this.router = new MainRouter();
+    //
+    this.router.on('route', function(route, params){
+        if(_currentView && _currentView.undelegateEventsundelegateEvents){
+            _currentView.undelegateEventsundelegateEvents();
+        }
+    });
 });

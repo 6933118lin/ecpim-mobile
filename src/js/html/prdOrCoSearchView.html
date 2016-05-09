@@ -1,0 +1,20 @@
+<div data-role="header" data-position="fixed">
+    <h1>ECPIM</h1>
+    <a href="#Main" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">返回</a>
+    <a id="btn-search" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext">搜索</a>
+</div>
+<div data-role="main">
+    <div data-role="controlgroup">
+        <select id="select-searchType">
+            <option value="1">产品</option>
+            <option value="2">厂家</option>
+        </select>
+        <input id="input-search" type="search" placeholder="搜索...">
+    </div>
+    <div id="cont-searchResult" data-role="listview"></div>
+    <a id="btn-loadMore" class="ui-btn">加载更多...</a>
+</div>
+
+<input id="input-preSearchType" type="hidden" value="product">
+<input id="input-posStart" type="hidden" value="0">
+<input id="input-pageSize" type="hidden" value="15">
