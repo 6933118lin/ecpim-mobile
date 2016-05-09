@@ -27,12 +27,15 @@ require([ "jquery", "backbone", "routers/MainRouter", "jquerymobile"], function(
     $.mobile.linkBindingEnabled = false;
     // Disabling this will prevent jQuery Mobile from handling hash changes
     $.mobile.hashListeningEnabled = false;
+    //
+    $.mobile.ajaxEnabled = false;
+    //
+    $.mobile.pushStateEnabled = false;
     // Instantiates a new Backbone.js Mobile Router
     this.router = new MainRouter();
     //
-    this.router.on('route', function(route, params){
-        if(_currentView && _currentView.undelegateEventsundelegateEvents){
-            _currentView.undelegateEventsundelegateEvents();
-        }
-    });
+    // Remove page from DOM when it's being replaced
+   /* $('div[data-role="page"]').on('pagehide', function (event, ui) {
+        $(event.currentTarget).remove();
+    });*/
 });

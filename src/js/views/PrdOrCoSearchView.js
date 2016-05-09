@@ -51,7 +51,7 @@ define(['text!html/PrdOrCoSearchView.html', 'jquery', 'config', 'jquerymobile'],
                 var html = "";
                 for(var i = 0; i < json.data.length; i++){
                     var item = json.data[i];
-                    html += '<li><a href="javascript:void(0)"><img src="img/ceprei.png"><h2>' + item.item + '</h2><p>' + item.itemEasy + '</p></a></li>';
+                    html += '<li><a href="#CompanyDetailView?' + item.code + '"><img src="img/ceprei.png"><h2>' + item.item + '</h2><p>' + item.itemEasy + '</p></a></li>';
                 }
                 $('#cont-searchResult').append(html);
                 $('#cont-searchResult').listview("refresh");
@@ -95,7 +95,7 @@ define(['text!html/PrdOrCoSearchView.html', 'jquery', 'config', 'jquerymobile'],
                 var html = "";
                 for(var i = 0; i < json.data.length; i++){
                     var item = json.data[i];
-                    html += '<li><a href="javascript:void(0)"><img src="img/ceprei.png"><h2>' + item.item + '</h2><p>' + item.itemEasy + '</p></a></li>';
+                    html += '<li><a href="#CompanyDetailView?' + item.code + '"><img src="img/ceprei.png"><h2>' + item.item + '</h2><p>' + item.itemEasy + '</p></a></li>';
                 }
                 $('#cont-searchResult').append(html);
                 $('#cont-searchResult').listview("refresh");

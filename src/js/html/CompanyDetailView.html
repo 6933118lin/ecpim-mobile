@@ -1,0 +1,72 @@
+<div data-role="header" data-position="fixed">
+    <h1>ECPIM</h1>
+    <a href="#PrdOrCoSearchView" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">返回</a>
+</div>
+<div data-role="main">
+    <style type="text/css">
+        .company-detail-table{
+            width: 100%;
+        }
+        .company-detail-table tr td{
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+    <table id="table-company-detail" data-role="none" class="company-detail-table">
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <img id="table-company-detail-pathCompanyphotos" onerror="imgNotFound(event);" alt="厂商图片">
+                <script type="text/javascript">
+                    function imgNotFound(){
+                        document.getElementById("table-company-detail-pathCompanyphotos").src = "img/404.jpg";
+                        document.getElementById("table-company-detail-pathCompanyphotos").onerror = null;
+                    }
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 80px;">单位名称</td>
+            <td id="table-company-detail-item"></td>
+        </tr>
+        <tr>
+            <td>单位简称</td>
+            <td id="table-company-detail-itemEasy"></td>
+        </tr>
+        <tr>
+            <td>单位别名</td>
+            <td id="table-company-detail-item2"></td>
+        </tr>
+        <tr>
+            <td>单位代码</td>
+            <td id="table-company-detail-code"></td>
+        </tr>
+        <tr>
+            <td>企业性质</td>
+            <td id="table-company-detail-codeCompanyNature"></td>
+        </tr>
+        <tr>
+            <td>所在省份</td>
+            <td id="table-company-detail-province"></td>
+        </tr>
+        <tr>
+            <td>所在城市</td>
+            <td id="table-company-detail-city"></td>
+        </tr>
+        <tr>
+            <td>单位地址</td>
+            <td id="table-company-detail-location"></td>
+        </tr>
+        <tr>
+            <td>邮政编码</td>
+            <td id="table-company-detail-zipCode"></td>
+        </tr>
+        <tr>
+            <td>单位网址</td>
+            <td id="table-company-detail-netAddress"></td>
+        </tr>
+        <tr>
+            <td>单位简介</td>
+            <td id="table-company-detail-OperationDesc"></td>
+        </tr>
+    </table>
+
+</div>
